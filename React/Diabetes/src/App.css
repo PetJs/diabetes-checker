@@ -1,0 +1,47 @@
+.styled-input {
+    padding: 10px;
+    width: 92%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+  
+.styled-input:focus {
+    border-color: #007bff;
+}
+
+/* Style for the background overlay */
+.overlay {
+    position: fixed;
+    inset: 0; /* Equivalent to top: 0; right: 0; bottom: 0; left: 0 */
+    background-color: rgba(0, 0, 0, 0.5); /* Gray with 50% opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* Style for the dialog box */
+.dialog-box {
+    background-color: white;
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 2rem; /* 8 units padding */
+}
+  
+  /* Style for the text inside the dialog box */
+.dialog-text {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    margin-bottom: 1rem; /* Margin for spacing */
+}
+
+.btn{
+    background-color: #d2e0ee;
+    width: 50%;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
