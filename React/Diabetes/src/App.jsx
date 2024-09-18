@@ -93,10 +93,13 @@ function App() {
   return (
     <>
       <div className="Header">
-        <h1>Know Your <span>Diabetes</span> Status</h1>
+        
+        <h3>Discover your diabetes status with ease!<span> Enter your details to get an assessment.</span></h3>
+        
       </div>
       <form className='main' onSubmit={handleSubmit}>
-        <ul>
+        
+        <ul className='main-content'>
           <li>
             <h2>What is your Gender?</h2>
             <Select
@@ -177,8 +180,11 @@ function App() {
               placeholder="e.g. 200"
             />
           </li>
+          <div className='btn-container'>
+            <button type="submit" className='btn'>SUBMIT</button>
+          </div>
+          
         </ul>
-        <button type="submit" className='btn'>SUBMIT</button>
       </form>
       {responseMessage && isOverlayVisible && (
         <div className='overlay'>

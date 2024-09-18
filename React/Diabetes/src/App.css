@@ -1,3 +1,35 @@
+.Header{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.main{
+    display: grid;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    height:50px;
+    margin-right: 10px;
+  }
+
+.main-content{
+    display: grid;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #f5f1f1;
+}
+
+li{
+    margin-bottom: 12px;
+    margin-right: 10px;
+}
+
+
+
 .styled-input {
     padding: 10px;
     width: 92%;
@@ -37,11 +69,21 @@
 }
 
 .btn{
-    background-color: #d2e0ee;
+    background-color: #b3b6b9;
     width: 50%;
     border-radius: 8px;
     padding: 8px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: #c9cbce;
 }
   
