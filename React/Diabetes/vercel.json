@@ -15,8 +15,8 @@
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "app/main.py"
+        "src": "/FastAPI/(.*)",
+        "dest": "main.py"
       },
       {
         "src": "/(.*)",
