@@ -1,50 +1,84 @@
-.Header{
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.Header {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-.main{
-    display: grid;
-    justify-content: center;
+.Header h3 {
+  font-size: 26px;
+  color: #00796b; /* Teal color */
+  margin-bottom: 15px;
 }
 
-.icon {
-    width: 50px;
-    height:50px;
-    margin-right: 10px;
+.Header span {
+  display: block;
+  font-size: 20px;
+  color: #004d40; /* Darker teal */
+}
+
+
+.main {
+    background-color: #ffffff; /* White background for a clean look */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the form horizontally */
+    font-family: 'Arial', sans-serif; /* Consistent font family */
   }
-
-.main-content{
-    display: grid;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    background-color: #f5f1f1;
-}
-
-li{
-    margin-bottom: 12px;
-    margin-right: 10px;
-}
-
-
-
-.styled-input {
-    padding: 10px;
-    width: 92%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    outline: none;
-    transition: border-color 0.3s ease;
-}
   
-.styled-input:focus {
-    border-color: #007bff;
-}
-
+  .main-content {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-content li {
+    margin-bottom: 20px; /* Space between form items */
+  }
+  
+  .main-content h2 {
+    font-size: 18px;
+    color: #333; /* Dark color for readability */
+    margin-bottom: 8px; /* Space below the heading */
+  }
+  
+  .styled-input {
+    width: 100%; /* Full width for better usability */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 16px;
+  }
+  
+  .styled-input:focus {
+    border-color: #00796b; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .btn-container {
+    text-align: center; /* Center align the button */
+  }
+  
+  .btn {
+    background-color: #00796b; /* Teal background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #004d40; /* Darker teal for hover effect */
+  }
+  
 /* Style for the background overlay */
 .overlay {
     position: fixed;
@@ -68,22 +102,22 @@ li{
     margin-bottom: 1rem; /* Margin for spacing */
 }
 
-.btn{
-    background-color: #b3b6b9;
-    width: 50%;
-    border-radius: 8px;
-    padding: 8px;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
 
 body{
-    background-color: #c9cbce;
-}
+    background-image: url("/bk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+@media (max-width: 600px) {
+    .Header h3 {
+      font-size: 20px;
+    }
+  
+    .Header span {
+      font-size: 16px;
+    }
+  }
   
