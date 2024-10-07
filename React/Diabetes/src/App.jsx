@@ -76,7 +76,7 @@ function App() {
 
       const result = await response.json();
       console.log('Success:', result);
-      if(result.response == 'Yes'){
+      if(result.response == 'YES'){
         setResponseMessage('You are at risk of developing diabetes');
       }else{
         setResponseMessage('You are not at risk of developing diabetes');
